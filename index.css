@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    font-family: 'Smythe', system-ui;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 600px;
+}
+
+header {
+    background-image: url("burgerImg.png");
+    background-size: cover;
+    height: 167px;
+}
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 40px;
+}
+
+.title-div > p,
+.title-div > h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 508px;
+    padding: 20px;
+    border-bottom: 1px solid #D2D2D2;
+    margin: auto;
+}
+
+.item-emoji {
+    font-size: 70px;
+    width: 100px;
+    text-align: center;
+}
+
+.item-desc {
+    flex-grow: 1; 
+    margin-left: 20px; 
+}
+
+.buy-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price {
+    text-align: right;
+    border-top: 1px solid #D2D2D2;
+    padding-top: 10px;
+}
+
+.remove-btn{
+      background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    text-decoration: underline;
+}
+
+#shopping-cart{
+    width: 508px;
+    margin: 0 auto;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 330px;
+    width: 324px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #FFFFFF;
+    }
+
+.checkout-form{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.pay-btn{
+   width: 66%;
+  padding: 10px;
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.modal-close-btn{
+    text-align: right;
+    margin: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.disabled-btn {
+    opacity: 0.5; /* Reduced opacity for disabled buttons */
+    pointer-events: none; /* Disable pointer events on the button */
+}
+
+.delivery-div{
+    margin-top:50px; 
+}
+
+.delivery-img{
+    width: 50%
+}
